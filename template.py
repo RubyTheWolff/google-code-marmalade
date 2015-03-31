@@ -7,6 +7,11 @@ def set_arg_types(...):
     Remember to cast the arguments to the correct types.'''
     pass
 
+def worker_function_here(...):
+    ... = set_arg_types(...)
+
+    pass
+
 def main():
     marmalade.output(...)
 
