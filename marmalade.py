@@ -10,7 +10,7 @@ _OUTPUT_FILE = _JAM_DIRECTORY + "/output.txt"
 
 def read_test_case(f, main_fn, test_length_fn):
     test_length, lines_read = test_length_fn(f, main_fn)
-    test_arguments = lines_read + list(islice(f, test_length))
+    test_arguments = lines_read + list(islice(f, int(test_length)))
     rstripped = (x.rstrip('\n') for x in test_arguments)
     return tuple(rstripped)
 
@@ -25,7 +25,7 @@ def default_test_length(f, main_fn):
     return fn_arity, []
 
 def first_line_test_length(f, main_fn):
-    first_line = int(f.readline())
+    first_line = f.readline()
     return first_line, [first_line]
 
 def output(main_fn, test_length_fn = default_test_length):
