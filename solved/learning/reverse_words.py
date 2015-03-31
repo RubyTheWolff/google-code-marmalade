@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import jam
+import marmalade
 
 def set_arg_types(words):
     '''All arguments from the input file are by default passed as strings.
@@ -14,7 +14,7 @@ def reverse_words(words):
     return ' '.join(reversed(word_list))
 
 def main():
-    jam.output(reverse_words)
+    marmalade.output(reverse_words)
 
 if __name__ == '__main__':
     main()

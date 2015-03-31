@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import jam
+import marmalade
 
 def parse_arguments(credit, num_items, prices):
     return int(credit), int(num_items), str(prices)
@@ -17,7 +17,7 @@ def two_items(credit, num_items, prices):
                     return ' '.join(map(str, two_indexes))
 
 def main():
-    jam.output(two_items)
+    marmalade.output(two_items)
 
 if __name__ == '__main__':
     main()
