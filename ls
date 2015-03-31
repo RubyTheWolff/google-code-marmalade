@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import marmalade
+import jam
 
 def set_arg_types(...):
     '''All arguments from the input file are by default passed as strings.
@@ -8,7 +8,7 @@ def set_arg_types(...):
     pass
 
 def main():
-    marmalade.output(...)
+    jam.output(...)
 
 if __name__ == '__main__':
     main()
